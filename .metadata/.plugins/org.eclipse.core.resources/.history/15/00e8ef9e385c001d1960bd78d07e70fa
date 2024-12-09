@@ -1,0 +1,18 @@
+
+interface Drawable{  
+    public void draw();  
+}  
+  
+public class GFG {  
+    public static void main(String[] args) {  
+        int age=30;
+        String name="Shashi";
+        double salary=100000.0;
+          
+        //with lambda  
+        Drawable d2=()->{  
+            System.out.println("Drawing "+"Gender Age ="+age+"\n"+"GenderName =="+ name+"\n"+"Employee Salary ="+salary);  
+        };  
+        d2.draw();  
+    }  
+}  

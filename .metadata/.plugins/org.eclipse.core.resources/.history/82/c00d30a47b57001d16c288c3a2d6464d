@@ -1,0 +1,40 @@
+package com.good.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.good.dto.LibraryDTO;
+
+public class LibraryDAOImplementation implements LibraryDAO {
+
+	@Override
+	public int add(LibraryDTO library) throws SQLException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void delete(int no) throws SQLException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void update(LibraryDTO library) throws SQLException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public LibraryDTO getLibrary(int id) throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<LibraryDTO> getAll() throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

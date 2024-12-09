@@ -1,0 +1,16 @@
+
+interface Drawable{  
+    public void draw();  
+}  
+  
+public class GFG {  
+    public static void main(String[] args) {  
+        int width;  
+          
+        //with lambda  
+        Drawable d2=()->{  
+            System.out.println("Drawing "+238428);  
+        };  
+        d2.draw();  
+    }  
+}  

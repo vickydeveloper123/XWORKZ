@@ -1,0 +1,13 @@
+package com.LambdaExpressions;
+
+public class CreatingThread {
+	
+	public static void main(String[] args) {
+		Runnable run=new Runnable() {
+			public void run() {
+				System.out.println("Thread is Running");
+			}
+		}
+	}
+
+}

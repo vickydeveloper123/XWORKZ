@@ -1,0 +1,22 @@
+package com.LambdaExpressions;
+
+interface Lambda(){
+	
+	public String Running();
+}
+
+class NoParameter{
+	
+	public static void main(String[] args) {
+		
+		
+		Lambda ll=()->{
+			return "i love Lambda Expressions";
+		};
+		
+		System.out.println(ll.Running());
+	
+	
+	
+}
+}

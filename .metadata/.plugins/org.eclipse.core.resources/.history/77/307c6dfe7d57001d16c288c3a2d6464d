@@ -1,0 +1,51 @@
+package com.good.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.good.dto.LibraryDTO;
+import com.good.util.DBScript;
+import com.good.util.DataBaseConnection;
+
+public class LibraryDAOImplementation implements LibraryDAO {
+
+	static Connection connection = DataBaseConnection.getDataBaseConnection();
+
+	@Override
+	public int add(LibraryDTO library) throws SQLException {
+		PreparedStatement preparedstatement=connection.prepareStatement(DBScript.insert);
+		
+		preparedstatement.setInt(1, 1111);
+		preparedstatement.setString(2, "DataStructure and Algorithms");
+		preparedstatement.setString(3, "Sri Vignesh");
+		preparedstatement.setString(4, "ComputerScience");
+		preparedstatement.setString(5, "Issued SucessFully");
+
+		return 0;
+	}
+
+	@Override
+	public void delete(int no) throws SQLException {
+
+	}
+
+	@Override
+	public void update(LibraryDTO library) throws SQLException {
+
+	}
+
+	@Override
+	public LibraryDTO getLibrary(int id) throws SQLException {
+
+		return null;
+	}
+
+	@Override
+	public List<LibraryDTO> getAll() throws SQLException {
+
+		return null;
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.good.main;
+
+import com.good.dto.LibraryDTO;
+
+public class LibraryRunner {
+	
+	public static void main(String[] args) {
+
+		LibraryDTO librarydto=new LibraryDTO();
+		
+		librarydto.setBook_No(111);
+		librarydto.setBook_Name("Data Structures and Algorithms");
+		librarydto.setBook_Author("Sri Vignesh");
+		librarydto.setBook_Issued("Issued Sucessfully");
+
+	}
+}

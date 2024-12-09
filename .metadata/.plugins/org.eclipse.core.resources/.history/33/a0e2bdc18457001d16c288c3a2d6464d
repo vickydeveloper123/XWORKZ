@@ -1,0 +1,30 @@
+package com.good.main;
+
+import java.sql.SQLException;
+
+import com.good.dao.LibraryDAOImplementation;
+import com.good.dto.LibraryDTO;
+
+public class LibraryRunner {
+	
+	public static void main(String[] args) throws SQLException {
+
+		LibraryDTO librarydto=new LibraryDTO();
+		
+		librarydto.setBook_No(1111);
+		librarydto.setBook_Name("Data Structures and Algorithms");
+		librarydto.setBook_Author("Sri Vignesh");
+		librarydto.setBranch("ComputerScienceEngineering");
+		librarydto.setBook_Issued("Issued Sucessfully");
+		
+		LibraryDAOImplementation libDaoImpl=new LibraryDAOImplementation();
+		/*
+		 * int result= libDaoImpl.add(librarydto);
+		 * System.out.println("Inserted Successfully"+result);
+		 */
+	    LibraryDTO DTO=	libDaoImpl.getLibrary(2);
+	    System.out.println(DTO.getBook_No());
+		
+
+	}
+}

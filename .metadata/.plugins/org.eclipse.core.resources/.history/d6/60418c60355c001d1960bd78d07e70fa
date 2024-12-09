@@ -1,0 +1,19 @@
+package com.LambdaExpressions;
+
+
+
+ 
+class GfG {
+    
+    static void fun(Testt t, int a, int b)
+    {
+        t.testing(a, b);
+    }
+    
+    public static void main(String[] args) {
+		
+    	fun((a,b)->System.out.println(a+" "+b),1,2);
+	}
+    
+	
+}

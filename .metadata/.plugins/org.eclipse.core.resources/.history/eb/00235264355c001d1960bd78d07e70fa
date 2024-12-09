@@ -1,0 +1,7 @@
+package com.LambdaExpressions;
+
+public interface Testt {
+	
+	public void testing(int a,int b);
+
+}

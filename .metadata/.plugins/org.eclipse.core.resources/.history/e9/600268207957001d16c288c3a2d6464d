@@ -1,0 +1,5 @@
+package com.good.dto;
+
+public class LibraryDTO {
+
+}

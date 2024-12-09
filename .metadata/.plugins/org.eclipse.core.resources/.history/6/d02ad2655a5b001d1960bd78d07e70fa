@@ -1,0 +1,8 @@
+package com.google;
+
+public class Address {
+	
+	private String streetName;
+	private int pincode;
+
+}

@@ -1,0 +1,19 @@
+package com.LambdaExpressions;
+
+interface LambdaExpresions{
+	public void LambdaExpression();
+}
+public class Lambda {
+	
+	public static void main(String[] args) {
+		
+		int employeeRollNo= 0;
+		String employeeSalary;
+		String workLocation;
+		LambdaExpresions result=()->System.out.println(employeeRollNo);
+		
+		
+	}
+
+}
+

@@ -1,0 +1,25 @@
+package com.LambdaExpressions;
+
+
+
+class Lambda{
+	
+	public static void main(String[] args) {
+		
+		int NumberOfPenPencils;
+		String paintingSet;
+		
+		Drawable drawing=()->System.out.println("NoOfPencils"+10+" SetName"+"GoodPainter");
+		
+		drawing.drawing();
+	}
+	
+	
+}
+
+interface Drawable{
+	
+	public void drawing();
+	
+	
+}

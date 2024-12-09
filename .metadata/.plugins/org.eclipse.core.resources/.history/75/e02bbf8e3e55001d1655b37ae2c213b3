@@ -1,0 +1,53 @@
+package com.google.adhardetails;
+
+import java.util.Scanner;
+
+public class IceCreamRunner {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		IceCreamRunner runner=new IceCreamRunner();
+
+		int ch;
+		
+		do {
+			
+			System.out.println("Enter ur coice");
+			System.out.println("1.Inserting the data");
+			System.out.println("2.Displaying the data");
+			System.out.println("3.Updating the data");
+			System.out.println("4.Deleting the data");
+			System.out.println("5.Exit");
+			System.out.println("Thank you for Shopping");
+			
+			ch=sc.nextInt();
+			
+			switch (ch) {
+			case 1:
+				IceCreamRunner runner=new IceCreamRunner();
+				
+				    runner.insertData();
+				
+				break;
+
+			default:
+				break;
+			}
+			
+		}
+		while(ch!=5){
+			
+			
+		}
+		
+		
+		
+		
+	}
+
+	private static void insertData() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

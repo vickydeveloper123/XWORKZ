@@ -1,0 +1,25 @@
+package com.LambdaExpressions;
+
+public interface Test {
+	
+	public void test(Integer a,Integer b);
+
+}
+
+class Test1{
+	
+	public static void Testing(Test c,Integer a,Integer b) {
+		
+		c.test(a, b);
+		
+	}
+	
+ public static void main(String[] args) {
+	 
+	 Testing((a,b)->System.out.println(a+" "+b),2 ,3);
+	
+	
+	 
+}	
+	
+}

@@ -1,0 +1,114 @@
+package com.google.adhardetails;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class IceCreamRunner {
+	
+	Scanner sc = new Scanner(System.in);
+
+	
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		IceCreamRunner runner = new IceCreamRunner();
+
+		int ch;
+
+		do {
+
+			System.out.println("Enter ur coice");
+			System.out.println("1.Inserting the data");
+			System.out.println("2.Displaying the data");
+			System.out.println("3.Updating the data");
+			System.out.println("4.Deleting the data");
+			System.out.println("5.Exit");
+			System.out.println("Thank you for Shopping");
+
+			ch = sc.nextInt();
+
+			switch (ch) {
+			case 1:
+
+				runner.insertData();
+
+				break;
+
+			case 2:
+
+				runner.displayData();
+
+				break;
+
+			case 3:
+				runner.updateData();
+				break;
+
+			case 4:
+				runner.deleteData();
+				break;
+
+			case 5:
+				System.out.println("Thank You For Visting Us");
+			}
+
+		} while (ch != 5);
+		
+		
+
+	}
+	
+	public Connection getconnect() {
+		
+		try {
+			
+			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcproject","root","Vignesh@8368");
+			
+			return con;
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+
+		}
+		return null;
+		
+	}
+
+	public void deleteData() {
+
+	}
+
+	public void updateData() {
+
+	}
+
+	public void displayData() {
+
+	}
+
+	public void insertData() {
+		
+		IceCream icecream=new IceCream();
+		
+		System.out.println("Enter the IceCream Name");
+		
+		String iname=sc.next();
+		icecream.setIceName(iname);
+		
+		System.out.println("Enter the IceCream Flavour");
+		String ifalvour=sc.next();
+		icecream.setIceFlavour(ifalvour);
+	
+		System.out.println("Enter the IceCream Cost");
+		double iflavour=sc.nextDouble();
+		icecream.setIcePrice(iflavour);
+	
+		
+
+	}
+
+}

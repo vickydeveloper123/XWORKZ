@@ -1,0 +1,12 @@
+package com.google.hp;
+
+
+public class Lenova  {
+	
+	static {
+		System.out.println("Lenova Specifications is Running from Lenova class ");
+	}
+	
+	
+
+}

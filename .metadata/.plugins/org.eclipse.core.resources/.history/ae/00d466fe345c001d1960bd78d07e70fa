@@ -1,0 +1,14 @@
+package com.LambdaExpressions;
+
+
+
+ 
+class GfG {
+    
+    static void fun(Testt t, int a, int b)
+    {
+        t.testing(a, b);
+    }
+    
+	
+}

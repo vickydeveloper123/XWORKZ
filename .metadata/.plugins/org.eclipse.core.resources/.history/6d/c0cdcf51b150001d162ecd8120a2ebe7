@@ -1,0 +1,15 @@
+package com.google.hp;
+
+public class HpLaptop {
+	
+	public void display() {
+		System.out.println("Display is exactly good and finest ==========its latest model=======");
+	}
+	
+	public void memoryStorage() {
+		System.out.println("Memory Storage is ultimately fine =========");
+		
+	}
+	
+
+}

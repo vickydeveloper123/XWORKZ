@@ -1,0 +1,12 @@
+package com.good.dto;
+
+public class LibraryDTO {
+	
+	int Book_No;
+	String Book_Name;
+	String Book_Author;
+	String Branch;
+	String Book_Issued;
+	
+
+}

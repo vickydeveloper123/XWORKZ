@@ -1,0 +1,22 @@
+package com.google;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeRunner {
+
+	public static void main(String[] args) {
+
+		EmployeeDetails employee1 = new EmployeeDetails(10, 15000, 25, "Vishnu", new Address("BTM", 524004));
+		EmployeeDetails employee2 = new EmployeeDetails(9, 12000, 24, "NEELESH", new Address("hindupur", 535304));
+		EmployeeDetails employee3 = new EmployeeDetails(11, 12400, 23, "Manujunath", new Address("silkboard", 434304));
+		EmployeeDetails employee4 = new EmployeeDetails(12, 153400, 27, "shahi", new Address("RajajiNagar", 3443434));
+		EmployeeDetails employee5 = new EmployeeDetails(01, 12420, 22, "shwetha", new Address("MG Road", 524004));
+
+		List<EmployeeDetails> list = new ArrayList<>();
+
+		System.out.println("Employee Details ==>" + list);
+
+	}
+
+}

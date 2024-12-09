@@ -1,0 +1,17 @@
+package com.LambdaExpressions;
+
+interface Runnable{
+	public String say(String name);
+}
+
+public class SingleParamter {
+	
+	Runnable r=(name)->
+	{
+		return "Hello Darling"+name;
+	};
+	
+  
+	
+
+}

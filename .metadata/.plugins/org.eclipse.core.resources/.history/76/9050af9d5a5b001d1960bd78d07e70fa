@@ -1,0 +1,13 @@
+package com.google;
+
+public class Address {
+
+	private String streetName;
+	private int pincode;
+	
+	public Address() {
+  
+		System.out.println("Address is running");
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.LambdaExpressions;
+
+import java.util.function.BiConsumer;
+
+public class LambdaExpression {
+
+	public static void main(String[] args) {
+		System.out.println("Execting Lambda Expression in a simple syntax");
+
+		LambdaExpression expression = new LambdaExpression();
+		// expression.Caluculator(1, 1, 1, 1);//
+
+		BiConsumer<Integer, Integer> reference = (a, b) -> System.out.println(a + b);
+		reference.accept(1, 9);
+	}
+
+}

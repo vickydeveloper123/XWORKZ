@@ -1,0 +1,21 @@
+package com.google.dbconstants;
+
+public class DBTransaction {
+	
+	public static void main(String[] args) { try {
+		
+			
+			Class.forName("com.mysql.cj.driver");
+			System.out.println("Driver Class Connection is successfull");
+			
+	} catch(ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	}
+	
+	
+	
+
+}

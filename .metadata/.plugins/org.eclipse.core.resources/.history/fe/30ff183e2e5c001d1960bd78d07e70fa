@@ -1,0 +1,20 @@
+package com.LambdaExpressions;
+
+public class LambdaExpression {
+	
+	public static void main(String[] args) {
+		System.out.println("Execting Lambda Expression in a simple syntax");
+		
+		LambdaExpression expression=new LambdaExpression();
+		expression.Caluculator(1, 1, 1, 1);
+	}
+	
+	public void Caluculator(int a,int b,int c,int d) {
+		
+		System.out.println(a+b+c-d);
+		
+	}
+
+}
+
+

@@ -1,0 +1,24 @@
+@FunctionalInterface
+interface Drawable() {
+	
+	int Testin(int a,int b);
+	
+}
+
+class CFG{
+	
+	public static void main(String[] args) {
+		
+		Drawable d=(a,b)->System.out.println(a+b);
+		System.out.println(d.Testin(1, 2));
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+}
+

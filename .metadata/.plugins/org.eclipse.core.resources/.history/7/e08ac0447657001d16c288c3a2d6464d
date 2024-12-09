@@ -1,0 +1,12 @@
+package com.good.util;
+
+import java.sql.Connection;
+
+public class DataBaseConnection {
+	
+	private static Connection connection=null;
+	
+	
+	
+
+}

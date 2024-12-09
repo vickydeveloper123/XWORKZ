@@ -1,0 +1,13 @@
+package com.LambdaExpressions;
+
+public class Product {
+	
+	String name;
+	int price;
+	
+	public Product() {
+
+		System.out.println("Ruuning Products Sucessfully");
+	}
+
+}

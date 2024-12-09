@@ -1,0 +1,17 @@
+package com.LambdaExpressions;
+
+interface Testing{
+	
+	public void runnable();
+	
+	
+}
+
+
+class NoParamater{
+	public static void main(String[] args) {
+		
+	}
+}
+
+  

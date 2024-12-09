@@ -1,0 +1,13 @@
+package com.good.dao;
+
+import java.sql.SQLException;
+
+import com.good.dto.LibraryDTO;
+
+public interface LibraryDAO {
+	
+	public int add(LibraryDTO dto) throws SQLException;
+	
+	public void delete (int no) throws SQLException;
+
+}

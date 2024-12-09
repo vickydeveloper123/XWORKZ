@@ -1,0 +1,12 @@
+package com.google.adhardetails;
+
+public class IceCream {
+
+	private int iceNO;
+	private String iceName;
+	private String iceFlavour;
+	private double icePrice;
+	
+	
+	
+}

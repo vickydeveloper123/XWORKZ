@@ -1,0 +1,42 @@
+package com.good.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.good.dto.LibraryDTO;
+import com.good.util.DataBaseConnection;
+
+public class LibraryDAOImplementation implements LibraryDAO {
+
+	@Override
+	public int add(LibraryDTO library) throws SQLException {
+		
+		 static  Connection con=DataBaseConnection.getDataBaseConnection();
+
+		return 0;
+	}
+
+	@Override
+	public void delete(int no) throws SQLException {
+
+	}
+
+	@Override
+	public void update(LibraryDTO library) throws SQLException {
+
+	}
+
+	@Override
+	public LibraryDTO getLibrary(int id) throws SQLException {
+
+		return null;
+	}
+
+	@Override
+	public List<LibraryDTO> getAll() throws SQLException {
+
+		return null;
+	}
+
+}
